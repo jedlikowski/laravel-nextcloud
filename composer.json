@@ -1,0 +1,47 @@
+{
+    "name": "jedlikowski/laravel-nextcloud",
+    "type": "library",
+    "version": "1.0.0",
+    "description": "Laravel 5 NextCloud Filesystem",
+    "keywords": [
+        "jedlikowski",
+        "laravel-nextcloud"
+    ],
+    "homepage": "https://github.com/jedlikowski/laravel-nextcloud",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jakub Jedlikowski",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~5.6|^7.0",
+        "illuminate/filesystem": "5.0.* || 5.1.* || 5.2.* || 5.3.* || 5.4.* || 5.5.* || 5.6.* || 5.7.* || 5.8.*",
+        "league/flysystem-webdav": "^1.0.8"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.0",
+        "phpunit/phpunit": "~5.0|~6.0|~7.0|~8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jedlikowski\\NextCloudStorage\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jedlikowski\\NextCloudStorage\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jedlikowski\\NextCloudStorage\\NextCloudServiceProvider"
+            ]
+        }
+    }
+}
