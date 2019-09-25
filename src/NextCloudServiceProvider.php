@@ -19,7 +19,7 @@ class NextCloudServiceProvider extends ServiceProvider
             }
 
             $client = new Client($config);
-            $adapter = new NextCloudAdapter($client, $pathPrefix);
+            $adapter = new NextCloudAdapter($client, $pathPrefix, $config);
 
             return new Filesystem($adapter);
         });
