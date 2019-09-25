@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\ServiceProvider;
 use Jedlikowski\NextCloudStorage\NextCloudAdapter;
 use League\Flysystem\Filesystem;
-use Sabre\DAV\Client as WebDAVClient;
+use Sabre\DAV\Client;
 
 class NextCloudServiceProvider extends ServiceProvider
 {
@@ -18,8 +18,11 @@ class NextCloudServiceProvider extends ServiceProvider
                 $pathPrefix = rtrim($config['pathPrefix'], '/') . '/' . $pathPrefix;
             }
 
-            $client = new WebDAVClient($config);
-            $adapter = new NextCloudAdapter($client, $pathPrefix);
+            $client = new Client($config);
+            $adapter = new NextCloudAdapter($client, [
+                'pathPrefix' => $pathPrefix,
+                'baseUri' => $config['baseUri'],
+            ]);
 
             return new Filesystem($adapter);
         });

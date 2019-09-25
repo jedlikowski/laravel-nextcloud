@@ -42,31 +42,18 @@ Create a NextCloud filesystem disk:
 ];
 ```
 
-## Change log
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
-
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) and [CONDUCT](CONDUCT.md) for details.
-
 ## Security
 
 If you discover any security related issues, please email jakub.jedlikowski@gmail.com instead of using the issue tracker.
 
 ## Credits
 
--   [Pascal Baljet][link-author]
--   [All Contributors][link-contributors]
+-   [Jakub Jedlikowski][link-author-1]
+-   [Pascal Baljet][link-author-2]
 
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
 
-[ico-version]: https://img.shields.io/packagist/v/pbmedia/laravel-webdav.svg?style=flat-square
-[ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-downloads]: https://img.shields.io/packagist/dt/pbmedia/laravel-webdav.svg?style=flat-square
-[link-packagist]: https://packagist.org/packages/pbmedia/laravel-webdav
-[link-downloads]: https://packagist.org/packages/pbmedia/laravel-webdav
 [link-author]: https://github.com/jedlikowski
-[link-contributors]: ../../contributors
+[link-author-2]: https://github.com/pascalbaljet
