@@ -33,7 +33,7 @@ class NextCloudAdapter extends WebDAVAdapter
     public function __construct(Client $client, string $pathPrefix, array $config)
     {
         $this->config = $config;
-        parent::construct($client, $pathPrefix);
+        parent::__construct($client, $pathPrefix);
     }
 
     protected function isDirectory(array $object)

@@ -46,4 +46,19 @@ class ServiceProviderTest extends \Orchestra\Testbench\TestCase
         $this->assertInstanceOf(NextCloudAdapter::class, $adapter);
         $this->assertEquals('prefix/remote.php/dav/files/' . $userName . '/', $adapter->getPathPrefix());
     }
+
+    /** @test */
+    public function it_can_generate_direct_url_to_file()
+    {
+        $userName = $this->app['config']->get('filesystems.disks.nextcloud.userName');
+        $filesystem = Storage::disk('nextcloud');
+        $driver = $filesystem->getDriver();
+        $adapter = $driver->getAdapter();
+
+        $filename = 'backup-2019-09-25-21-00-00.zip';
+        $targetUrl = 'https://jedlikowski:supersecretpassword@mywebdavstorage.com/remote.php/dav/files/' . $userName . '/' . $filename;
+
+        $this->assertInstanceOf(NextCloudAdapter::class, $adapter);
+        $this->assertEquals($targetUrl, $filesystem->url($filename));
+    }
 }
