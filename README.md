@@ -48,7 +48,7 @@ If you discover any security related issues, please email jakub.jedlikowski@gmai
 
 ## Credits
 
--   [Jakub Jedlikowski][link-author-1]
+-   [Jakub Jedlikowski][link-author]
 -   [Pascal Baljet][link-author-2]
 
 ## License
