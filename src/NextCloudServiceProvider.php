@@ -13,7 +13,7 @@ class NextCloudServiceProvider extends ServiceProvider
     public function boot()
     {
         Storage::extend('nextcloud', function ($app, $config) {
-            $pathPrefix = 'remote.php/dav/files/' . $config['userName'];
+            $pathPrefix = 'remote.php/dav/files/' . (isset($config['objectGuid']) ? $config['objectGuid'] : $config['userName']);
             if (array_key_exists('pathPrefix', $config)) {
                 $pathPrefix = rtrim($config['pathPrefix'], '/') . '/' . $pathPrefix;
             }
