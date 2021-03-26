@@ -37,6 +37,7 @@ Create a NextCloud filesystem disk:
 	    'userName'   => 'johndoe',
 	    'password'   => 'secret',
 	    'pathPrefix' => '', // provide a subfolder name if your NextCloud instance isn't running directly on a domain, e.g. https://example.com/drive
+	    'objectGuid' => 'OBJECT_GUID', // optional params, used when NextCloud instance is using AD/LDAP as Authentication provider so the webDav url will be look like e.g https://example.com/remote.php/dav/files/OBJECT_GUID/
 	],
 	...
 ];
@@ -50,6 +51,7 @@ If you discover any security related issues, please email jakub.jedlikowski@gmai
 
 -   [Jakub Jedlikowski][link-author]
 -   [Pascal Baljet][link-author-2]
+-   [Bashir Arrohman][link-author-3]
 
 ## License
 
@@ -57,3 +59,4 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [link-author]: https://github.com/jedlikowski
 [link-author-2]: https://github.com/pascalbaljet
+[link-author-3]: https://github.com/tyangjawi03
