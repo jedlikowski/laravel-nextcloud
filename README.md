@@ -7,7 +7,7 @@ Based on https://github.com/pascalbaljetmedia/laravel-webdav
 Via Composer
 
 ```bash
-$ composer require jedlikowski/laravel-nextcloud
+$ composer require tyangjawi03/laravel-nextcloud
 ```
 
 ## Usage
