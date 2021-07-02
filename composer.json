@@ -1,5 +1,5 @@
 {
-    "name": "jedlikowski/laravel-nextcloud",
+    "name": "tyangjawi03/laravel-nextcloud",
     "type": "library",
     "version": "1.0.0",
     "description": "Laravel 5 NextCloud Filesystem",
@@ -7,11 +7,15 @@
         "jedlikowski",
         "laravel-nextcloud"
     ],
-    "homepage": "https://github.com/jedlikowski/laravel-nextcloud",
+    "homepage": "https://github.com/tyangjawi03/laravel-nextcloud",
     "license": "MIT",
     "authors": [
         {
             "name": "Jakub Jedlikowski",
+            "role": "Developer"
+        },
+        {
+            "name": "Bashir Arrohman",
             "role": "Developer"
         }
     ],
